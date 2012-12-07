@@ -1,0 +1,67 @@
+#!/usr/bin/env python
+
+##
+# Configuration variables
+##
+
+##
+# Most sites will have need both the database and files backed up, however if only one or the other is required, the following examples should cover all scenarios.
+## 
+
+
+# --------------------
+# Cloud Sites
+# --------------------
+
+sample_site = dict({
+'db_user':"joe_user",
+'db_pass':"abcd1234",
+'db_ip':"xxx.xxx.xxx.xxx",
+'db_name':"12345_dbname",
+'site_name':"blog.samplesite.com",
+'ftp_user':'boblawbob',
+'ftp_pass':'bobs_pass',
+'ftp_address':'ftp3.ftptoyoursite.com'
+})
+
+sample_site_without_database = dict({
+'db_user':"",
+'db_pass':"",
+'db_ip':"",
+'db_name':"",
+'site_name':"blog.nodatabase.com",
+'ftp_user':'scary_mary',
+'ftp_pass':'quite_contrary',
+'ftp_address':'ftp3.ftptoyoursite.com'
+})
+
+sample_site_without_files = dict({
+'db_user':"dennis_db_user",
+'db_pass':"dennis_system",
+'db_ip':"xxx.xxx.xxx.xxx",
+'db_name':"12345_dbname",
+'site_name':"blog.dennissystem.com",
+'ftp_user':'',
+'ftp_pass':'',
+'ftp_address':''
+})
+
+# Mosso Cloud Sites to be backed up
+backup_enabled_sites = [stage_engagetv, 
+			www_engagetv, 
+			www_deliveryagent, 
+			magento_deliveryagent, 
+			insidehboshop_hbo, 
+			nbc_blog_seenon, 
+			tapout_blog_seenon, 
+			blog_seenon, 
+			projectrunway_blog_seenon, 
+			blog_shoptheshows]
+
+#Configurables
+alert_email =  'on_call_guy@supportmail.com'
+path_to_sendmail = "/usr/sbin/sendmail"
+mail_from_address = 'on_call_guy@supportmail.com'
+main_backup_dir = '/home/csbackup/da_backups'
+backup_log_path  = main_backup_dir + '/logs'
+backup_log =  backup_log_path + '/backup.log'
