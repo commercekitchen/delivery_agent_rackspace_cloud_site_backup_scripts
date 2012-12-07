@@ -5,7 +5,10 @@
 ##
 
 ##
-# Most sites will have need both the database and files backed up, however if only one or the other is required, the following examples should cover all scenarios.
+# Most sites will have need both the database and files backed up, however if only one or the other is required, the fo$
+#  There are 2 steps required to add a site to this config
+#  1.) Create a new site information array under Cloud Sites
+#  2.) Add the site to the array backup_enabled_sites under the 'Mosso Cloud Sites to be backed up' heading
 ## 
 
 

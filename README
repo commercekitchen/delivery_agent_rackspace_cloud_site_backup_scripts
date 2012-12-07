@@ -1,0 +1,8 @@
+conf.py  conf.py.template  da_backup.py  da_check_backup.py  README
+
+There are 3 files here that handle backing up sites on Rackspace.
+conf.py -> configuration file, this file needs to be updated everytime a new site is added for backups
+conf.py.template -> a blank configuration file
+da_backup.py -> this is the main file that runs the backups (generally called by cron)
+da_check_backup.py -> this ensures that files are up to date to ensure backups are running properly (generally called by cron)
+
